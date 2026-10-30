@@ -1,0 +1,8 @@
+Python version:
+Python 3.8.10
+
+GCC version:
+gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+
+System information:
+Linux m-dhieu 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
