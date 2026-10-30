@@ -1,0 +1,9 @@
+ Version 1 Compilation 
+Version 1 compiler exit status: 0
+
+ Version 2 Compilation 
+Version 2 compiler exit status: 0
+
+ Generated Executables 
+-rwxr-xr-x 1 monicadhieu monicadhieu 22K Nov  8 16:26 data_sync
+-rwxr-xr-x 1 monicadhieu monicadhieu 24K Nov  8 16:27 data_sync_v2
