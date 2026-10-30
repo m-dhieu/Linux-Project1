@@ -1,0 +1,4 @@
+[2026-11-11 00:16:33] [PID:888] Backup initialized
+[2026-11-11 00:16:33] [PID:889] Child process started backup
+[2026-11-11 00:16:33] [PID:889] ERROR: Source file couldn't be opened
+[2026-11-11 00:16:33] [PID:888] Backup failed in child process

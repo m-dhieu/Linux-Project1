@@ -1,0 +1,3 @@
+Linux System Call Forensics and Execution Analysis.
+This is a backup simulation.
+We are investigating file operations and process behavior.
