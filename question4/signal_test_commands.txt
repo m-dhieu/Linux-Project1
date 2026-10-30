@@ -1,0 +1,33 @@
+# Signal-Driven Linux Service Controller
+# Commands used to test the service
+
+# Compile the program
+gcc -Wall -Wextra -Wpedantic -o server_controller server_controller.c
+
+# Start the service and capture its output
+./server_controller > server_output.log 2>&1 &
+PID=$!
+
+# TEST 1: Request status in NORMAL mode
+kill -SIGUSR1 "$PID"
+
+# TEST 2: Switch to MAINTENANCE mode
+kill -SIGUSR2 "$PID"
+
+# TEST 3: Request status in MAINTENANCE mode
+kill -SIGUSR1 "$PID"
+
+# TEST 4: Return to NORMAL mode
+kill -SIGUSR2 "$PID"
+
+# TEST 5: Graceful shutdown
+kill -SIGINT "$PID"
+wait "$PID"
+
+# TEST 6: Start a fresh process for SIGTERM
+./server_controller >> server_output.log 2>&1 &
+PID=$!
+
+# Emergency termination
+kill -SIGTERM "$PID"
+wait "$PID"
